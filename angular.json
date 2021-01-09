@@ -24,9 +24,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/scss/main.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor/jquery-2.2.4.min.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/jquery.ajaxchimp.min.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/parallax.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/jquery.sticky.js",
+              "src/assets/js/hexagons.min.js",
+              "src/assets/js/jquery.counterup.min.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/jquery.nice-select.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/omnisdk.js"
+            ]
           },
           "configurations": {
             "production": {

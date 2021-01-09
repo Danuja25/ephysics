@@ -1,0 +1,55 @@
+
+<app-header-navigation></app-header-navigation>
+
+<!-- ================ start banner Area ================= -->
+<section class="banner-area">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-12 banner-right">
+        <h1 class="text-white">
+          Theory
+        </h1>
+        <p class="mx-auto text-white  mt-20 mb-40">
+          Guides containing essential theories and principles.
+        </p>
+        <div class="link-nav">
+						<span class="box">
+							<a href="home">Home </a>
+							<i class="lnr lnr-arrow-right"></i>
+							<a href="theory_main">Theory</a>
+						</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================ End banner Area ================= -->
+
+<div class="container">
+<div class="section-top-border">
+  <div class="row">
+    <div class="col-lg-12">
+      <blockquote class="generic-blockquote">
+        “Time and space are finite in extent, but they don't have any boundary or edge. They would be like the surface of the earth, but with two more dimensions."
+        -
+        Stephen Hawking
+      </blockquote>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="page-wrapper">
+<div class="card-container">
+  <ng-container *ngFor="let MainUnit of mainUnits">
+    <div class="card" style="width: 300px; margin: 10px;">
+      <img class="card-img-top img-responsive" src='{{MainUnit.image}}' alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">{{MainUnit.name}}</h4>
+        <p class="card-text">{{MainUnit.description}}</p>
+        <a (click)="goToContentView()" class="btn btn-primary">View Content</a>
+      </div>
+    </div>
+  </ng-container>
+</div>
+</div>

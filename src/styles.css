@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/scss/css/bootstrap.css";
+@import "assets/scss/css/main.css";
+@import "assets/scss/css/availability-calendar.css";
+@import "assets/scss/css/font-awesome.min.css";
+@import "assets/scss/css/hexagons.min.css";
+@import "assets/scss/css/ion.rangeSlider.css";
+@import "assets/scss/css/jquerysctipttop.css";
+@import "assets/scss/css/linearicons.css";
+@import "assets/scss/css/magnific-popup.css";
+@import "assets/scss/css/nice-select.css";
+@import "assets/scss/css/normalize.min.css";
+@import "assets/scss/css/owl.carousel.css";
+
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  /*max-width: 1500px;*/
+}

@@ -1,0 +1,59 @@
+
+<app-header-navigation></app-header-navigation>
+
+<!-- ================ start banner Area ================= -->
+<section class="banner-area">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-12 banner-right">
+        <h1 class="text-white">
+          Sub Topics
+        </h1>
+        <p class="mx-auto text-white  mt-20 mb-40">
+          Topics under the main unit.
+        </p>
+        <div class="link-nav">
+						<span class="box">
+							<a href="home">Home </a>
+							<i class="lnr lnr-arrow-right"></i>
+							<a href="theory_main">Theory</a>
+              <i class="lnr lnr-arrow-right"></i>
+							<a href="theory_main">Sub Units</a>
+						</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================ End banner Area ================= -->
+
+<div class="container">
+  <div class="section-top-border">
+    <div class="row">
+      <div class="col-lg-12">
+        <blockquote class="generic-blockquote">
+          “Not only is the Universe stranger than we think, it is stranger than we can think."
+          -
+          Werner Heisenberg
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrapper">
+  <div class="container-fluid">
+    <div class="card-container">
+      <ng-container *ngFor="let SubUnit of subUnits">
+        <div class="card" style="width: 300px; margin: 10px;">
+          <img class="card-img-top img-responsive" src='{{SubUnit.image}}' alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">{{SubUnit.name}}</h4>
+            <p class="card-text">{{SubUnit.description}}</p>
+            <a (click)="goToContentView()" class="btn btn-primary">View Content</a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
