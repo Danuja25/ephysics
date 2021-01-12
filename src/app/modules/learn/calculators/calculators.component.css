@@ -1,0 +1,7 @@
+.cal-container {
+
+}
+
+.cal-container > mat-card {
+  width: 200px;
+}

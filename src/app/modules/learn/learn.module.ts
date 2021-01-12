@@ -14,19 +14,25 @@ import {AngularSplitModule} from 'angular-split';
 import {YouTubePlayerModule} from '@angular/youtube-player';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { QuizContentComponent } from './quiz-content/quiz-content.component';
+import {MatCardModule} from '@angular/material/card';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
   declarations: [HomeComponent, TheoryMainUnitsComponent, PracticalMainUnitsComponent, CalculatorsComponent, SubUnitsComponent, ContentComponent, QuizContentComponent],
-  imports: [
-    CommonModule,
-    LearnRoutingModule,
-    NgbModule,
-    AngularSplitModule,
-    YouTubePlayerModule,
-    RouterModule.forChild(routes),
-    SharedModule
-  ],
+    imports: [
+        CommonModule,
+        LearnRoutingModule,
+        NgbModule,
+        AngularSplitModule,
+        YouTubePlayerModule,
+        RouterModule.forChild(routes),
+        SharedModule,
+        MatCardModule,
+        FlexLayoutModule,
+      BrowserAnimationsModule
+    ],
   exports: [HomeComponent]
 })
 export class LearnModule { }

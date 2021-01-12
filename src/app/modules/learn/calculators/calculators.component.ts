@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { get } from 'scriptjs';
 
 @Component({
   selector: 'app-calculators',

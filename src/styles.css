@@ -17,6 +17,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  justify-content: center;
+  justify-content: space-between;
   /*max-width: 1500px;*/
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
